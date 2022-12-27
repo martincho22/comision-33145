@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    height: 190vh;
+    width: 100vw;
+    background-color: #34363C;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+        "header "
+        "main   "
+        "footer ";
+}
+
+
+
+#cabecera{
+    background-color: #34363C;
+    height: 30vh;
+    grid-area: header;
+    background-image: linear-gradient(to left,rgb(111, 99, 99),#34363C );
+}
+
+.cabecera__logo{
+   height: 23vh;
+   display: flex;
+   justify-content: center;
+
+   
+}
+
+
+nav{
+    height: 7vh;
+    width: 80vw;
+    /* background-color: rgba(0, 0, 0, 0.116); */
+    display:flex; 
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 50%;
+
+   
+}
+
+
+ul li{
+    
+    border-radius: 5px;    
+    height: 50%;    
+    background-color: rgba(237, 237, 245, 0.119);    
+    transition:all  0.6s;   
+ 
+}
+
+ul li:hover{ 
+            height: 50px;
+            background-color: black;
+}
+
+ul li a ,a:active ,a:visited ,a:link{
+    text-decoration: none;
+    color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    transition:all 0.6s; 
+}
+
+ul li a:hover{
+    color: orangered;
+    padding: 20px;
+   
+}
+
+#menu_a{
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    
+}
+
+
+#menu_b{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu_b li{
+ margin-left: 5px;
+
+}
+
+
+
+
+
+
+#container{
+    height:140vh;
+    width: 100vw;
+    background-color: #34363C;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "imagenes"
+    "marcas"
+    "catalogo"
+    ;
+
+}
+
+ .section__a{
+    height: 70vh;
+    background-color:#34363C;
+    grid-area:imagenes ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center ;
+    align-items:center;
+    gap: 5px;
+}
+
+
+.section__a img{
+    
+    height: 60vh;
+    width: 300px;
+    border: white solid 2px;
+    box-shadow: rgb(207, 203, 203) 0px 50px 100px -20px, 
+    rgb(134, 114, 114) 0px 30px 60px -30px, rgb(246, 244, 244) 0px -2px 6px 0px inset;
+  
+}
+
+
+
+ .section__b{
+    display: flex;
+    height: 20vh;
+    width: 80%;
+    background-color: white;
+    grid-area: marcas;
+    margin: auto;  
+
+}
+
+ .section__c{
+    height: 40vh;
+    background-color: rgb(128, 126, 123);
+    grid-area:catalogo ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.section__c div{
+    height: 70%;
+    border-bottom: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  
+  
+}
+
+.section__c div p,h1{
+    margin-top: 5px;
+  
+}
+
+
+
+
+
+#pie{
+ 
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+ 
+
+}
+
+.pie_contacto{
+   
+    background-color: greenyellow;
+    height:100% ;
+    flex-basis: 25vw;
+
+}
+
+.pie_ubicacion{
+    background-color: darkcyan;
+    height:100% ;
+    flex-basis: 25vw;
+    flex-grow: 1;
+
+}
+
+.pie_seguinos{
+   
+    background-color: lightcoral;
+    height:100% ;
+    flex-basis: 25vw;
+}
+
+
+
+
+
+
+/* .pie_contacto{
+    width: 290px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+   
+   
+}
+
+
+footer h3{
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.pie_ubicacion div{
+    width: 290px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+   
+   
+ 
+}
+
+.pie_ubicacion iframe{border: 2px solid white;}
+
+.pie_seguinos div{
+    width: 290px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     
+   
+    
+}*/
+
+
+/*media queri desktop*/
+
+
+@media (max-width:1400px){
+    
+}
+
+@media (max-width:1200px){
+  
+}
+
+@media  (max-width:1024px){
+  
+}
+
+@media  (max-width:768px){
+
+
+}
+
+@media  (max-width:600px){
+   
+}
+
+@media  (max-width:480px){
+
+}
+
+@media  (max-width:320px){
+}
