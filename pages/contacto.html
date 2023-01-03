@@ -14,8 +14,8 @@
    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 
 
-   <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
-   <link rel="stylesheet" href="../assets/css/styles.css">
+   <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+   <link rel="stylesheet" href="../assets/css/form.css">
    <title>SKULLTECH</title>
 </head>
 <body>
@@ -27,7 +27,7 @@
 
        <nav>
            <ul id="menu_a">
-               <li><a href="#">GAMING</a></li>
+               <li><a href="../index.html">GAMING</a></li>
                <li><a href="#">DESKTOP</a></li>
                <li><a href="#">ACCESORIOS</a></li>
                <li><a href="#">OFERTAS</a></li>
@@ -48,40 +48,61 @@
    <!----------------fin header------------------------->
    <!----------------inicio main----------------------->
 
-   <main id="container">
+   <main id="container_form">
 
-      
+
+    <div class="container_caja">
+                <form id="form" class="formulario">
+                        
+                        <div><input id="name" type="text" placeholder="Nombre"></div>
+
+                        <div><input id="email" type="text" placeholder="Correo"></div>
+
+                        <div><textarea id="message" type="text" placeholder="Mensaje"></textarea></div>
+
+                        <div><input id="submit" type="submit" value="Enviar!"></div>
+                
+                </form>
+
+    </div>
    </main>
    <!-----------------fin main------------------------>
    <!-----------------inicio footer---------------------->
 
-   <footer id="pie">
+   <footer>
 
-       <div class="pie_contacto">
-           <h3>CONTACTO</h3>
-           
-       <a href=""><i class='bx bx-md bxs-phone-call'></i></a>
-       <a href=""><i class='bx bx-md bxs-envelope' ></i></a>
-       <a href=""><i class='bx bx-md bxl-whatsapp-square'></i></a>
-           
-       </div>
+    <div class="pie_container">
 
-       <div class="pie_ubicacion">
-           <h3>UBICACION</h3>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104884.03344798346!2d-58.489882055266406!3d-34.76501179679627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd261abf8fb75%3A0xd3b4119f62723032!2sLomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1672089641696!5m2!1ses-419!2sar" width="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-       </div>
-
-       <div class="pie_seguinos">
-
-         <h3>SEGUINOS</h3> 
-           <a href="#"><i class='bx bx-md bxl-instagram'></i></a>
-           <a href="#"><i class='bx bx-md bxl-facebook' ></i></a>
-           <a href="#"><i class='bx bx-md bxl-twitch'></i></a>
+        <div class="pie_contacto">
+            <h3>CONTACTO</h3>
+            <i class='bx bx-md bx-phone-call'><a>0924366987</a></i>
+            <i class='bx bx-md bx-mail-send' ><a>Correo</a></i>
+            <i class='bx bx-md bxl-whatsapp' ><a>1322987458</a></i>
          
-       </div>
-      
-   </footer>
+        </div>
+
+        <div class="pie_ubicacion">
+            <h3>UBICACION</h3>
+            <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13112.278745776799!2d-58.405933799999985!3d-34.75383735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1672363440519!5m2!1ses-419!2sar" width="400" height="143" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+    
+        </div>
+
+        <div class="pie_seguinos">
+            <h3>SEGUINOS</h3>
+            <div class="sk">
+            <i class='bx bx-md bxl-facebook-circle'><a href="https://www.facebook.com/"></a></i>
+            <i class='bx bx-md bxl-instagram'><a href="http://www.instagram.com"></a></i>
+            <i class='bx bx-md bxl-twitch'><a href="http://www.twich.com"></a></i>
+          
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
 
    <!------------------fin footer----------------------->
    <!------------------scripts-------------------------->

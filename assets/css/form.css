@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #34363C;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+        "header "
+        "main   "
+        "footer ";
+}
+
+
+
+#cabecera{
+    background-color: #34363C;
+    height: 30vh;
+    grid-area: header;
+    background-image: linear-gradient(to left,rgb(111, 99, 99),#34363C );
+}
+
+.cabecera__logo{
+   height: 23vh;
+   display: flex;
+   justify-content: center; 
+}
+
+
+
+nav{
+    height: 7vh;
+    width: 80vw;
+    /* background-color: rgba(0, 0, 0, 0.116); */
+    display:flex; 
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 50%;
+
+   
+}
+
+
+ul li{
+    
+    border-radius: 5px;    
+    height: 50%;    
+    background-color: rgba(237, 237, 245, 0.119);    
+    transition:all  0.6s;   
+ 
+}
+
+ul li:hover{ 
+            height: 50px;
+            background-color: black;
+}
+
+ul li a ,a:active ,a:visited ,a:link{
+    text-decoration: none;
+    color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    transition:all 0.6s; 
+}
+
+ul li a:hover{
+    color: orangered;
+    padding: 20px;
+   
+}
+
+#menu_a{
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    
+}
+
+
+#menu_b{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu_b li{
+ margin-left: 5px;
+
+}
+
+/*-------------formulario--------*/
+
+
+
+#container_form{
+    height: 40vh;
+    width: 100vw;
+    background-color: #34363C;
+    margin-top: 25px ;
+    
+    }
+    .container_caja{  
+       margin: auto;
+       width: 50%;
+       grid-area: form;    
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(248, 245, 245, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+    }
+    
+    #form input ,textarea{
+        width: 100%;
+        font-size: 1.2rem;
+        border: red 1px solid;
+        border-radius: 5px;
+        font-family: play;
+        padding: 10px;
+        background-color: #34363C;
+        color: chocolate;
+    
+    }
+
+
+
+
+
+footer{
+    height: 30vh;
+    margin:auto;    
+    }
+
+.pie_container{
+        width: 80vw;
+        padding: 10px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: red;
+}
+
+
+
+
+.pie_contacto{
+    height: 200px;
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    line-height: 20px;
+}
+
+.pie_contacto a{
+    font-family: 'Trebuchet MS',
+ 'Lucida Sans Unicode', 'Lucida Grande', 
+ 'Lucida Sans', Arial, sans-serif;
+ font-size: medium;
+ font-weight:500;
+ margin-left:25px ;
+
+ 
+}
+
+
+.pie_ubicacion{
+  height:100%; 
+  width: 400px;
+  
+  flex-grow: 0.5;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.map{text-align: center;
+     
+}
+
+.map iframe{padding: 5px;}
+
+.pie_seguinos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height:100%; 
+  width: 350px;
+ 
+  padding: 15px;
+  justify-content: space-between;
+
+}
+
+
+.sk{margin-top:10px ;
+    line-height: 67px;} 
+
+
+
+/*media queri desktop*/
+
+
+@media (max-width:1400px){
+    
+}
+
+@media (max-width:1200px){
+  
+}
+
+@media  (max-width:1024px){
+  
+}
+
+@media  (max-width:768px){
+
+
+}
+
+@media  (max-width:600px){
+   
+}
+
+@media  (max-width:480px){
+
+}
+
+@media  (max-width:320px){
+}

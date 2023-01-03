@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -33,16 +35,14 @@ body{
 .cabecera__logo{
    height: 23vh;
    display: flex;
-   justify-content: center;
-
-   
+   justify-content: center; 
 }
+
 
 
 nav{
     height: 7vh;
     width: 80vw;
-    /* background-color: rgba(0, 0, 0, 0.116); */
     display:flex; 
     flex-wrap: wrap;
     margin: auto;
@@ -139,16 +139,81 @@ ul li a:hover{
     gap: 5px;
 }
 
+.section_img{
+  
+    height: 60vh;
+    width: 300px;
+    border: 1px solid white;
+   
+    
+}
 
-.section__a img{
+#uno{
+    background-image: url("/assets/img/walla.jpg");
+    background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+#dos{
+    background-image: url("/assets/img/wallb.jpg");
+    background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+#tres{
+    background-image: url("/assets/img/wallc.jpg");
+    background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+#cuatro{
+    background-image: url("/assets/img/walld.jpg");
+    background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+
+/* .section__a img{
     
     height: 60vh;
     width: 300px;
     border: white solid 2px;
     box-shadow: rgb(207, 203, 203) 0px 50px 100px -20px, 
     rgb(134, 114, 114) 0px 30px 60px -30px, rgb(246, 244, 244) 0px -2px 6px 0px inset;
+    
   
 }
+ */
+
+.section_img h2{
+
+    color: antiquewhite;
+    font-size: 2.5rem;
+    line-height: 180px;
+    text-align: center;
+    font-family: play;
+}
+
+.section_img a{font-family: play;}
+
+.section_img h2 a:hover{
+
+    box-shadow: blue 0px 0px 0px 2px inset, rgba(255, 3, 3, 0.614) 10px -10px 0px -3px, rgba(255, 255, 255, 0) 10px -10px, rgb(82, 77, 77) 20px -20px 0px -3px, rgba(74, 73, 72, 0) 20px -20px, rgba(209, 3, 3, 0.452) 30px -30px 0px -3px, rgba(255, 156, 85, 0) 30px -30px, rgba(0, 80, 252, 0.701) 40px -40px 0px -3px, rgba(255, 85, 85, 0) 40px -40px;
+    border-radius: 15PX;
+    
+}
+
+
+
+.section_img:hover{
+    transform: translate(20px);
+    transition: 0.8s;
+}
+
+
+
 
 
 
@@ -191,117 +256,133 @@ ul li a:hover{
 }
 
 
+footer{height: 30vh;
+    
+      margin:auto;
+       
+    }
 
-
-
-#pie{
- 
-    height: 40vh;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-
- 
-
+.pie_container{
+        width: 80vw;
+        padding: 10px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: red;
 }
+
+
+
 
 .pie_contacto{
-   
-    background-color: greenyellow;
-    height:100% ;
-    flex-basis: 25vw;
+height: 200px;
+width:350px;
 
-}
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding: 15px;
+line-height: 20px;
 
-.pie_ubicacion{
-    background-color: darkcyan;
-    height:100% ;
-    flex-basis: 25vw;
-    flex-grow: 1;
-
-}
-
-.pie_seguinos{
-   
-    background-color: lightcoral;
-    height:100% ;
-    flex-basis: 25vw;
-}
-
-
-
-
-
-
-/* .pie_contacto{
-    width: 290px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-   
-   
-}
-
-
-footer h3{
-    border-left: 1px solid red;
-    border-right: 1px solid red;
-    padding: 2px;
-    margin-bottom: 10px;
-}
-
-.pie_ubicacion div{
-    width: 290px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-   
-   
  
 }
 
-.pie_ubicacion iframe{border: 2px solid white;}
+.pie_contacto a{
+    font-family: 'Trebuchet MS',
+ 'Lucida Sans Unicode', 'Lucida Grande', 
+ 'Lucida Sans', Arial, sans-serif;
+ font-size: medium;
+ font-weight:500;
+ margin-left:25px ;
 
-.pie_seguinos div{
-    width: 290px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+ 
+}
+
+
+.pie_ubicacion{
+  height:100%; 
+  width: 400px;
+  
+  flex-grow: 0.5;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.map{text-align: center;
      
-   
-    
-}*/
+}
 
+.map iframe{padding: 5px;}
+
+.pie_seguinos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height:100%; 
+  width: 350px;
+ 
+  padding: 15px;
+  justify-content: space-between;
+
+}
+
+
+.sk{margin-top:10px ;
+    line-height: 67px;} 
+
+/*-------------formulario--------*/
+
+
+
+#container_form{
+height: 40vh;
+width: 100vw;
+background-color: #34363C;
+
+}
+.container_caja{
+
+   margin: auto;
+   width: 50%;
+   grid-area: form;
+    
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(248, 245, 245, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+#form input ,textarea{
+    width: 100%;
+    font-size: 1.2rem;
+    border: red 1px solid;
+    border-radius: 5px;
+    font-family: play;
+    padding: 10px;
+    background-color: #34363C;
+    color: chocolate;
+
+}
 
 /*media queri desktop*/
 
 
 @media (max-width:1400px){
-    
+   
 }
 
 @media (max-width:1200px){
-  
+
 }
 
 @media  (max-width:1024px){
-  
+    
 }
 
-@media  (max-width:768px){
-
+@media  (min-width:768px){
+    .nav_responsive{display:none}
 
 }
 
@@ -314,4 +395,49 @@ footer h3{
 }
 
 @media  (max-width:320px){
+
+    body{height: 500vh;}
+    
+    .nav_desktop{display:none}
+    .nav_responsive{
+   
+        margin-top: 20px;
+    }
+
+    ul{list-style: none;
+    width: 80vw;
+    display: flex;
+    justify-content: center;}
+
+    .res li a {
+        background-color:rgba(0, 0, 0, 0.238);
+        color:#fff;
+        text-decoration:none;
+        padding:10px 12px;
+        display: flex;
+
+    }
+
+    .res li a:hover {
+        background-color:#434343;
+    }
+    
+    .res li ul {
+        display:none;
+   
+        min-width:140px;
+    }
+    
+    .res li:hover > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  
+    #cabecera{height: 40vh;}
+
+    
+  
 }
+
+    
